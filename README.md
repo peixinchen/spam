@@ -16,7 +16,7 @@
   The C extension interface is specific to CPython, and extension modules do not work on other Python implementations. In many cases, it is possible to avoid writing C extensions and preserve portability to other implementations. For example, if your use case is calling C library functions or system calls, you should consider using the ctypes module or the cffi library rather than writing custom C code. These modules let you write Python code to interface with C code and are more portable between implementations of Python than writing and compiling a C extension module. 
   ```
 
-2. \#include <Python.h>必须在第一个进行include
+2. \#include \<Python.h\>必须在第一个进行include
 
   ```
   Note
